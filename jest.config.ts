@@ -23,7 +23,7 @@ export default {
     // collectCoverageFrom: undefined,
 
     // The directory where Jest should output its coverage files
-    coverageDirectory: "./server/tests/coverage",
+    coverageDirectory: "./src/__test__/coverage",
 
     // An array of regexp pattern strings used to skip coverage collection
     // coveragePathIgnorePatterns: [
@@ -86,7 +86,7 @@ export default {
     // notifyMode: "failure-change",
 
     // A preset that is used as a base for Jest's configuration
-    preset: "@shelf/jest-mongodb",
+    // preset: "@shelf/jest-mongodb",
 
     // Run tests from one or more projects
     // projects: undefined,
@@ -110,7 +110,7 @@ export default {
     // rootDir: undefined,
 
     // A list of paths to directories that Jest should use to search for files in
-    roots: ["./server"],
+    roots: ["./src"],
 
     // Allows you to use a custom runner instead of Jest's default test runner
     // runner: "jest-runner",
@@ -128,7 +128,7 @@ export default {
     // snapshotSerializers: [],
 
     // The test environment that will be used for testing
-    // testEnvironment: "jest-environment-node",
+    testEnvironment: "jest-environment-node",
 
     // Options that will be passed to the testEnvironment
     // testEnvironmentOptions: {},
@@ -157,7 +157,7 @@ export default {
     // testRunner: "jest-circus/runner",
 
     // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
-    // testURL: "http://localhost",
+    testURL: "http://localhost",
 
     // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
     // timers: "real",

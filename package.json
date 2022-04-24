@@ -2,9 +2,10 @@
     "name": "node-ts-jest-testing",
     "version": "1.0.0",
     "description": "Test NodeJS app and API endpoints using the Jest testing library.",
-    "main": "index.ts",
+    "main": "./src/index.ts",
     "scripts": {
-        "test": "jest"
+        "test": "jest --detectOpenHandles",
+        "dev": "ts-node-dev ./src/index.ts"
     },
     "repository": {
         "type": "git",
